@@ -6,20 +6,18 @@
 - Add footer
 - change logo
 - Find none copyright images
-- Set standard image physical size on carousel images
-- Add words in the first or third slide of carusel (verifiy and see what works best)
 - Setup react for page template  
 
 ## < SERVICIOS >
 
 (LABORAL)
-- Add dept logo 
+
 - Dept BG image
 - Elaborate on what it entails
 - Examples 
 
 (FAMILIAR)
-- Add dept logo 
+
 - Dept BG image
 - Elaborate on what it entails
 - Examples
@@ -31,21 +29,21 @@
 - Examples
 
 (PENAL)
-- Add dept logo 
+
 - Dept BG image
 - Elaborate on what it entails
 - Examples
 - 
 
 (CORPORATIVA)
-- Add dept logo 
+ 
 - Dept BG image
 - Elaborate on what it entails
 - Examples
 - 
 
 (MIGRATORIA)
-- Add dept logo 
+
 - Dept BG image
 - Elaborate on what it entails
 - Examples
@@ -69,8 +67,6 @@
 
 ## < CONTACTANOS >
 - Set google maps API 
-- in contact info edit phone number
-- make info available to be able to copy and paste.
 - Enable PHP script for email to work 
 - Setup social media icons and link them 
 

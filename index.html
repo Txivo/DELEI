@@ -47,6 +47,8 @@ body {
     background-blend-mode: multiply;
 }
 
+
+/* image opacity script */
 /* img {
     opacity: 0.3;
     filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -58,18 +60,45 @@ body {
 
 }
 
-#example1 {
-    border: 2px solid black;
-    padding: 25px;
-    background: url("./Imagenes/LogoDelei.png");
-    background-repeat: no-repeat;
-    background-size: auto;
+.logo {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo .btn {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.logo .btn:hover {
+    background-color: black;
 }
 
 
     </style>
     <!-- Imagen de arriba 2 -->
-    <img id="logo" src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
+    
+    <img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
+   
+    
+    
 
 </head>
 
@@ -158,8 +187,61 @@ body {
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
+
+<!-- Login test -->
+<ul class="nav navbar-nav navbar-right">
+   
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+        <ul id="login-dp" class="dropdown-menu">
+            <li>
+                 <div class="row">
+                        <div class="col-md-12">
+                            Login via
+                            <div class="social-buttons">
+                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                            </div>
+                            or
+                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                         <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                         <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                         <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                    </div>
+                                    <div class="form-group">
+                                         <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                    </div>
+                                    <div class="checkbox">
+                                         <label>
+                                         <input type="checkbox"> keep me logged-in
+                                         </label>
+                                    </div>
+                             </form>
+                        </div>
+
+
+
+
         </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="container" style="background-color: grey;">
 
@@ -213,12 +295,12 @@ body {
                     <div class="carousel-caption d-none d-md-block">
                         <h1>NUESTROS VALORES</h1>
 
-                        <h2>Nuestra mission</h2>
+                       
 
                         <h3>Prestar servicios integrales innovadores, con adecuados métodos de defensa y estrategia legal,
                              en las diferentes áreas del derecho, de manera eficiente y con sentido de responsabilidad social.</h3>
 
-                            <h2>Nuestra Vision</h2>
+                            
 
                             <h3>Ser una firma líder en el mercado, que brinde consultoría jurídica de la más alta calidad, a toda persona,
                                  cuya base sea el principio y cultura de la legalidad.</h3>
