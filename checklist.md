@@ -3,7 +3,6 @@
 ## < HOME >
 - Setup general background 
 - Create login and create account buttons
-- Add footer
 - change logo
 - Find none copyright images
 - Setup react for page template  
