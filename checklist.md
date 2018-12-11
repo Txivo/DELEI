@@ -1,11 +1,11 @@
 ## WEBSITE checklist
 
 ## < HOME >
-- Setup general background 
-- Create login and create account buttons
+- Setup general background get rid of grey side stripes
 - change logo
 - Find none copyright images
 - Setup react for page template  
+- aline nav bar in the bottom
 
 ## < SERVICIOS >
 
@@ -48,17 +48,17 @@
 - Examples
 
 
-## < PERSONAL >
+## < Sobre nosotros >
 
-(ABOGADOS)
-- 
-- 
-
-(ADMINISTRACION)
+(Galeria de fotos)
 - 
 - 
 
-(EMPLEADOS)
+(Testimonios)
+- 
+- 
+
+(Proximos eventos)
 - 
 - 
 
@@ -70,11 +70,8 @@
 - Setup social media icons and link them 
 
 ## < CREAR CUENTA >
-- Move to top right corner with sign in button
 - Create a landing page for login 
-- Create Account page
-    * personal info
-    * Email/password info 
+
 
 
 ## < CONTRIBUCIONES >
