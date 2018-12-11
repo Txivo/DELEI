@@ -66,7 +66,7 @@
 
 
 ## < CONTACTANOS >
-- Set google maps API 
+- Set google maps API to non developer mode
 - Enable PHP script for email to work 
 - Setup social media icons and link them 
 
