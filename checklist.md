@@ -6,6 +6,7 @@
 - Find none copyright images
 - Setup react for page template  
 - aline nav bar in the bottom
+- agregar quienes somos en navbar
 
 ## < SERVICIOS >
 
