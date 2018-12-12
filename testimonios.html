@@ -25,16 +25,81 @@
         h1 {
             font-family: "Times New Roman", Times, serif;
         }
+        @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
 
-        .logo {
-            font-family: "Times New Roman", Times, serif;
-        }
+.detailBox {
+    width:100%;
+    border:1px solid #bbb;
+    margin:50px;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
+
 
     </style>
 
-<!-- Imagen de arriba 2 -->
+    <!-- Imagen de arriba 2 -->
 
-<img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
+    <img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
 
 
 </head>
@@ -105,7 +170,7 @@
                     <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
 
-                
+
 
 
                 <!-- dropdown-menu  Registrarse/Iniciar-->
@@ -131,81 +196,66 @@
     </nav>
 
 
-    <div class="container" style="background-color: grey;">
+    <div class="container" >
 
-            <!-- top of the page title  -->
-            <div class="jumbotron" style="background-color: transparent">
-                  <h1 class="text-center" style="-webkit-text-stroke-width: 2px;
+        <!-- top of the page title  -->
+        <div class="jumbotron" style="background-color: transparent">
+            <h1 class="text-center" style="-webkit-text-stroke-width: 2px;
                   -webkit-text-stroke-color:black; text-size-adjust: 40 px;">Testimonios</h1>
-                  <hr>
+                  </div>
+            <hr>
 
-        <!-- OUR TEAM Catalog -->
-            <li class="contact-item-wrapper ourTeamEntry ourTeamEntryHide ourTeamEntryFilter" data-uid="579b2c82-9efc-4d4a-b9c9-80a1e6fbc737" role="option" aria-selected="false">
-                    <div class="sf_cols contact-item-container">
-                        <div class="contact-item-2col-left">
+            <!-- Content goes here  -->
             
-            
-                                                <!-- Left -->
-            
-                                               
-                                               <div class="shadow-wrapper">
-                                                    <div class="contact-img">
-                                                        <a href="/our-team/partners/william-r-dougherty">
-            
-                                                        <img src="/images/default-source/employees/billdougherty-9321_0971_v1.tmb-thmb200mh.jpg?sfvrsn=2" alt="">
-                                                         </a>   
-                                                            </div>
-                                                   
-                                                <div class="add-to-contact-list"><a href="javascript:void(0)" class="addToContactList" data-contactid="4e6dcb0e-743d-6a02-aaf8-ff0000765f2c">Add to Contact List</a></div>
-                            </div>
-                                                <!-- END Left -->
-            
-                                        </div>
-                        <div runat="server" class="contact-item-2col-right">
-            
-                            <!-- Right -->
-                            <div class="sf_cols contact-details-container">
-                                <div class="sf_cols contact-details-container-inner">
-                                    <div class="contact-details-2col-left">
-                                        <div class="contact-detail-main">
-                                            <div class="contact-name">
-                                                <a href="/our-team/partners/Gonzálo-Martínez-Martínez">Gonzálo Martínez Martínez</a>
-                                            </div>
-                                            <div class="contact-title">Partner<br>Chairman of the Executive Committee<br></div>
-                                        </div>
-                                    </div>
-                                    <div class="contact-details-2col-right">
-                                        <div class="contact-details-sub">
-                                            <div class="contact-office">Monterrey</div>
-                                            <div class="contact-phone">(812)141-7372</div>
-                                            <div class="contact-Cell">(811)999-9743</div>
-                                            <div class="contact-email">
-                            <a href="mailto:gonzalo@delei.com.mex">gonzalo@delei.com.mex</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="sf_cols contact-focus-container" style="display:none">
-                                <div class="sf_cols contact-focus-container-inner">
-                                    <div class="contact-focus-1col">
-                                        <h3>Practice Focus</h3>
-                                        <ul>
-                                                <li><a href="/client-services/industry/healthcare" class="column-tagged-item">Healthcare</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-            
-                        </div>
+            <div class="detailBox">
+                    <div class="titleBox">
+                      <label>Testimonios</label>
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
                     </div>
-            
-                <!-- END Section -->
-            
-                                </li>
-
-
+                    <div class="commentBox">
+                        
+                        <p class="taskDescription">Testimonios y comentarios de nuestros servicios.</p>
+                    </div>
+                    <div class="actionBox">
+                        <ul class="commentList">
+                            <li>
+                                <div class="commenterImage">
+                                  <img src="http://placekitten.com/50/50" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="commenterImage">
+                                  <img src="http://placekitten.com/45/45" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
+                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="commenterImage">
+                                  <img src="http://placekitten.com/40/40" />
+                                </div>
+                                <div class="commentText">
+                                    <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+                
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Tus comentarios" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-default">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 </body>
 
 </html>

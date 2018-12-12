@@ -1,201 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+/*font Awesome http://fontawesome.io*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Comment List styles*/
 
-  <!-- bootstrap cdn link -->
+<style>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    .button {
-      background-color: #4CAF50;
-      /* Green */
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-
-    .button1 {
-      border-radius: 2px;
-    }
-
-    .button2 {
-      border-radius: 4px;
-    }
-
-    .button3 {
-      border-radius: 8px;
-    }
-
-    .button4 {
-      border-radius: 12px;
-    }
-
-    .button5 {
-      border-radius: 50%;
-    }
-
-
-    .fa {
-      padding: 20px;
-      font-size: 30px;
-      width: 50px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-    }
-
-    .fa:hover {
-      opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-    }
-
-    .fa-google {
-      background: #dd4b39;
-      color: white;
-    }
-
-    .fa-linkedin {
-      background: #007bb5;
-      color: white;
-    }
-
-    .fa-youtube {
-      background: #bb0000;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #125688;
-      color: white;
-    }
-
-  </style>
-
-</head>
+.comment-list .row {
+  margin-bottom: 0px;
+}
+.comment-list .panel .panel-heading {
+  padding: 4px 15px;
+  position: absolute;
+  border:none;
+  /*Panel-heading border radius*/
+  border-top-right-radius:0px;
+  top: 1px;
+}
+.comment-list .panel .panel-heading.right {
+  border-right-width: 0px;
+  /*Panel-heading border radius*/
+  border-top-left-radius:0px;
+  right: 16px;
+}
+.comment-list .panel .panel-heading .panel-body {
+  padding-top: 6px;
+}
+.comment-list figcaption {
+  /*For wrapping text in thumbnail*/
+  word-wrap: break-word;
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) {
+  .comment-list .arrow:after, .comment-list .arrow:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+  }
+  .comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+    border-left: 0;
+  }
+  /*****Left Arrow*****/
+  /*Outline effect style*/
+  .comment-list .panel.arrow.left:before {
+    left: 0px;
+    top: 30px;
+    /*Use boarder color of panel*/
+    border-right-color: inherit;
+    border-width: 16px;
+  }
+  /*Background color effect*/
+  .comment-list .panel.arrow.left:after {
+    left: 1px;
+    top: 31px;
+    /*Change for different outline color*/
+    border-right-color: #FFFFFF;
+    border-width: 15px;
+  }
+  /*****Right Arrow*****/
+  /*Outline effect style*/
+  .comment-list .panel.arrow.right:before {
+    right: -16px;
+    top: 30px;
+    /*Use boarder color of panel*/
+    border-left-color: inherit;
+    border-width: 16px;
+  }
+  /*Background color effect*/
+  .comment-list .panel.arrow.right:after {
+    right: -14px;
+    top: 31px;
+    /*Change for different outline color*/
+    border-left-color: #FFFFFF;
+    border-width: 15px;
+  }
+}
+.comment-list .comment-post {
+  margin-top: 6px;
+}
+</style>
 
 
-
-<body src="########" alt="Responsive image" style="">
-  <br>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-        aria-selected="true">Home</a>
-      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-        aria-selected="false">Profile</a>
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-        aria-selected="false">Contact</a>
-    </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-  </div>
-
-</body>
+<body>
+  
 
 
-
-
-
-
-<!-- Footer -->
-<footer>
-  <div row>
-    <div class=" col row-4 bg-dark" style="background-color: #e5e4e3 ;">
-
-      <aside id="themerex-social-widget-3" class="columns1_2 widget-number-1 widgetWrap widget widget_socials">
-        <div class="widget_inner">
-          <div class="logo">
-            <br>
-            <a href="http://delei.com.mx">
-              <img src="http://delei.com.mx/wp-content/uploads/2015/02/LogoDeleiWhite.png" alt=""> </a>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="page-header">Comments</h2>
+        <section class="comment-list">
+          <!-- First Comment -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
             </div>
-          <br>
-
-
-
-
-          <div class="logo_descr text-white">Somos una firma legal, consultora en materia penal,
-            familiar y laboral, especializada en brindar un servicio integral basado en principios,
-            conocimiento y experiencia profesional, a través de una defensa técnica de calidad,
-            enfocado al óptimo desarrollo legal y protección de nuestros clientes. </div>
-          <br>
-
-
-         
-
-          <!-- Logos de redes sociales y links -->
-          <div class="logo_socials socPage">
-            <ul>
-              <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook button button5"></a>
-                <a href="#" class="fa fa-twitter button button5"></a>
-                <a href="#" class="fa fa-google button button5"></a>
-                <a href="#" class="fa fa-linkedin button button5"></a>
-                <a href="#" class="fa fa-youtube button button5"></a>
-                <a href="#" class="fa fa-instagram button button5"></a>
-            </ul>
-          </div>
-
-
-
-          <!-- Above closing div for social media icons  -->
-        </div>
-
-      </aside>
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow left">
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Second Comment Reply -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-9 col-sm-9">
+              <div class="panel panel-default arrow left">
+                <div class="panel-heading right">Reply</div>
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Third Comment -->
+          <article class="row">
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow right">
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
+            </div>
+          </article>
+          <!-- Fourth Comment -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+              <div class="panel panel-default arrow left">
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Fifth Comment -->
+          <article class="row">
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow right">
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
+            </div>
+          </article>
+          <!-- Sixth Comment Reply -->
+          <article class="row">
+            <div class="col-md-9 col-sm-9 col-md-offset-1 col-md-pull-1 col-sm-offset-0">
+              <div class="panel panel-default arrow right">
+                <div class="panel-heading">Reply</div>
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-md-pull-1 hidden-xs">
+              <figure class="thumbnail">
+                <img class="img-responsive" src="http://www.tangoflooring.ca/wp-content/uploads/2015/07/user-avatar-placeholder.png" />
+                <figcaption class="text-center">username</figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
     </div>
-
-</footer>
+  </div>
+</div>
 
 </body>
-
 </html>
