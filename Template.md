@@ -252,9 +252,6 @@
 
     </footer>
 
-</body>
-
-</html>
 
 
 </body>
