@@ -19,21 +19,164 @@
         crossorigin="anonymous"></script>
 
 
-        <!-- Add icon library -->
+    <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Cuenta</title>
 
 
     <style>
+
+
         h1 {
-            font-family: "Times New Roman", Times, serif;
+        font-family: "Times New Roman", Times, serif;
+        color:black;
+        text-shadow: 1px;
+        /* -webkit-text-stroke-width: 1.5px; */
+    /* -webkit-text-stroke-color:black; */
+    }
+    
+     h3 {
+        color: black;
+        
+        text-shadow: 1px;
+    }
+    
+    .logo {
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    body {
+       
+        background-color: white;
+    }
+    
+    
+    /* image opacity script */
+    /* img {
+        opacity: 0.3;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        
+    } */
+    
+    #logo {
+    
+    
+    }
+    
+    .logo {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo .btn {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .logo .btn:hover {
+        background-color: black;
+    }
+    
+    .button {
+          background-color: #4CAF50;
+          /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
         }
-    </style>
+    
+        .button1 {
+          border-radius: 2px;
+        }
+    
+        .button2 {
+          border-radius: 4px;
+        }
+    
+        .button3 {
+          border-radius: 8px;
+        }
+    
+        .button4 {
+          border-radius: 12px;
+        }
+    
+        .button5 {
+          border-radius: 50%;
+        }
+    
+        /* Dimensions of the icon buttons */
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 62px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 30px;
+        }
+    
+        .fa:hover {
+          opacity: 0.7;
+        }
+    
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+    
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+    
+        .fa-google {
+          background: #dd4b39;
+          color: white;
+        }
+    
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+    
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+    
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+        </style>
 
-<!-- Imagen de arriba 2 -->
+    <!-- Imagen de arriba 2 -->
 
-<img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
+    <img src="./Imagenes/topbg.png" alt="Responsive image" style="width: 100%;">
 
 
 </head>
@@ -104,7 +247,7 @@
                     <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
 
-                
+
 
 
                 <!-- dropdown-menu  Registrarse/Iniciar-->
@@ -126,20 +269,6 @@
                     </div>
                 </li>
 
-
-
-
-
-            </ul>
-
-            <!-- Search placeholder -->
-
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-
-
         </div>
     </nav>
 
@@ -150,6 +279,8 @@
 
     <div class="container">
 
+
+        <!-- Check this form  -->
         <body background="./Registration form Page_files/background.jpg" style="opacity:75%" alt="bottles image">
 
 
@@ -163,208 +294,196 @@
                     <!-- top of the page title  -->
                     <h1 class="text-center" style="-webkit-text-stroke-width: 2px;
                     -webkit-text-stroke-color:black; text-size-adjust: 40 px;">Forma
-                            de Registro</h1>
-                        <hr>
-                        
-                        <!-- Registration Form -->
+                        de Registro</h1>
+                    <hr>
 
-                        <div class="row">
-                            <div class="col-lg-12">
+                    <!-- Registration Form -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
 
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <br>
-                                        <p>Porfavor llenar la forma para registrarse.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <br>
+                                    <p>Porfavor llenar la forma para registrarse.</p>
+                                </div>
+                                <div class="panel-body">
+
+
+
+                                    <div class="columns text-danger">
+                                        <span class="required-copy">*Requerido</span>
                                     </div>
-                                    <div class="panel-body">
 
 
+                                    <!-- might have issues on id="reserve_name" -->
 
-                                        <div class="columns text-danger">
-                                            <span class="required-copy">*Requerido</span>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Nombre</label>
+                                            <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputPassword4">Apellido</label>
+                                            <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+
+                                        <!-- Email -->
+                                        <div class="form-group col-md-4">
+                                            <label for="email-input">Correo</label>
+                                            <input type="email" class="form-control" id="email-input" placeholder="nombre@ejemplo.com"
+                                                name="Email" required="">
                                         </div>
 
-
-                                        <!-- might have issues on id="reserve_name" -->
-
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="inputEmail4">Nombre</label>
-                                                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="inputPassword4">Apellido</label>
-                                                <input type="text" class="form-control" id="inputLastName"
-                                                    placeholder="Apellido">
-                                            </div>
+                                        <!-- Password -->
+                                        <div class="form-group col-md-4">
+                                            <label for="Password-input">Contraseña</label>
+                                            <input type="password" class="form-control" id="Password-input" placeholder="Contraseña"
+                                                name="Password" required="">
                                         </div>
 
-                                        <div class="form-row">
-
-                                            <!-- Email -->
-                                            <div class="form-group col-md-4">
-                                                <label for="email-input">Correo</label>
-                                                <input type="email" class="form-control" id="email-input" placeholder="nombre@ejemplo.com"
-                                                    name="Email" required="">
-                                            </div>
-
-                                            <!-- Password -->
-                                            <div class="form-group col-md-4">
-                                                <label for="Password-input">Contraseña</label>
-                                                <input type="password" class="form-control" id="Password-input"
-                                                    placeholder="Contraseña" name="Password" required="">
-                                            </div>
-
-                                            <!-- Password confirmation-->
-                                            <div class="form-group col-md-4">
-                                                <label for="Password2-input">Comfirmar Contraseña</label>
-                                                <input type="password" class="form-control" id="Password2-input"
-                                                    placeholder="Comfirmar Contraseña" name="Password-comfirmation"
-                                                    required="">
-                                            </div>
-
+                                        <!-- Password confirmation-->
+                                        <div class="form-group col-md-4">
+                                            <label for="Password2-input">Comfirmar Contraseña</label>
+                                            <input type="password" class="form-control" id="Password2-input"
+                                                placeholder="Comfirmar Contraseña" name="Password-comfirmation"
+                                                required="">
                                         </div>
 
-                                        <!-- Address -->
-                                        <div class="form-group">
-                                            <label for="address-input">Dirección</label>
-                                            <input type="text" class="form-control" id="address-input" placeholder="1234 calle ave."
-                                                name="address" required="">
-                                        </div>
+                                    </div>
 
-                                        <!-- Address 2 -->
-                                        <div class="form-group">
-                                            <label for="address2-input">Dirección 2</label>
-                                            <input type="text" class="form-control" id="address2-input" placeholder="Colonia, piso, interior, etc"
-                                                name="address2" required="">
-                                        </div>
+                                    <!-- Address -->
+                                    <div class="form-group">
+                                        <label for="address-input">Dirección</label>
+                                        <input type="text" class="form-control" id="address-input" placeholder="1234 calle ave."
+                                            name="address" required="">
+                                    </div>
 
-                                        <!-- City -->
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label for="city-input">Ciudad</label>
-                                                <input type="text" class="form-control" id="city-input" placeholder="Ciudad"
-                                                    name="Ciudad" required="">
-                                            </div>
+                                    <!-- Address 2 -->
+                                    <div class="form-group">
+                                        <label for="address2-input">Dirección 2</label>
+                                        <input type="text" class="form-control" id="address2-input" placeholder="Colonia, piso, interior, etc"
+                                            name="address2" required="">
+                                    </div>
 
-                                            <!-- Dropdown estados de México -->
-                                            <div class="form-group col-md-4">
-                                                <label for="state-input">Estado</label>
-                                                <select id="state-input" class="form-control" name="state" required="">
-                                                    <option selected="">Seleccionar...</option>
-
-                                                    <option value="0">Todo México</option>
-
-                                                    <option value="1">Aguascalientes</option>
-
-                                                    <option value="2">Baja California</option>
-
-                                                    <option value="3">Baja California Sur</option>
-
-                                                    <option value="4">Campeche</option>
-
-                                                    <option value="5">Coahuila</option>
-
-                                                    <option value="6">Colima</option>
-
-                                                    <option value="7">Chiapas</option>
-
-                                                    <option value="8">Chihuahua</option>
-
-                                                    <option value="9">Distrito Federal</option>
-
-                                                    <option value="10">Durango</option>
-
-                                                    <option value="11">Guanajuato</option>
-
-                                                    <option value="12">Guerrero</option>
-
-                                                    <option value="13">Hidalgo</option>
-
-                                                    <option value="14">Jalisco</option>
-
-                                                    <option value="15">México</option>
-
-                                                    <option value="16">Michoacán</option>
-
-                                                    <option value="17">Morelos</option>
-
-                                                    <option value="18">Nayarit</option>
-
-                                                    <option value="19">Nuevo León</option>
-
-                                                    <option value="20">Oaxaca</option>
-
-                                                    <option value="21">Puebla</option>
-
-                                                    <option value="22">Querétaro</option>
-
-                                                    <option value="23">Quintana Roo</option>
-
-                                                    <option value="24">San Luis Potosí</option>
-
-                                                    <option value="25">Sinaloa</option>
-
-                                                    <option value="26">Sonora</option>
-
-                                                    <option value="27">Tabasco</option>
-
-                                                    <option value="28">Tamaulipas</option>
-
-                                                    <option value="29">Tlaxcala</option>
-
-                                                    <option value="30">Veracruz</option>
-
-                                                    <option value="31">Yucatán</option>
-
-                                                    <option value="32">Zacatecas</option>
-
-
-
-                                                </select>
-                                            </div>
-
-                                            <!-- Zipcode -->
-                                            <div class="form-group col-md-2">
-                                                <label for="Zip-input">Código postal</label>
-                                                <input type="text" class="form-control" id="Zip-input" placeholder="Código postal"
-                                                    name="Zip" required="">
-                                            </div>
+                                    <!-- City -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="city-input">Ciudad</label>
+                                            <input type="text" class="form-control" id="city-input" placeholder="Ciudad"
+                                                name="Ciudad" required="">
                                         </div>
 
 
 
-                                        <!--Telefono -->
+                                        <!-- Dropdown estados de México -->
+                                        <div class="form-group col-md-4">
+                                            <label for="state-input">Estado</label>
+                                            <select id="state-input" class="form-control" name="state" required="">
+                                                <option selected="">Seleccionar...</option>
+
+                                                <option value="0">Todo México</option>
+
+                                                <option value="1">Aguascalientes</option>
+
+                                                <option value="2">Baja California</option>
+
+                                                <option value="3">Baja California Sur</option>
+
+                                                <option value="4">Campeche</option>
+
+                                                <option value="5">Coahuila</option>
+
+                                                <option value="6">Colima</option>
+
+                                                <option value="7">Chiapas</option>
+
+                                                <option value="8">Chihuahua</option>
+
+                                                <option value="9">Distrito Federal</option>
+
+                                                <option value="10">Durango</option>
+
+                                                <option value="11">Guanajuato</option>
+
+                                                <option value="12">Guerrero</option>
+
+                                                <option value="13">Hidalgo</option>
+
+                                                <option value="14">Jalisco</option>
+
+                                                <option value="15">México</option>
+
+                                                <option value="16">Michoacán</option>
+
+                                                <option value="17">Morelos</option>
+
+                                                <option value="18">Nayarit</option>
+
+                                                <option value="19">Nuevo León</option>
+
+                                                <option value="20">Oaxaca</option>
+
+                                                <option value="21">Puebla</option>
+
+                                                <option value="22">Querétaro</option>
+
+                                                <option value="23">Quintana Roo</option>
+
+                                                <option value="24">San Luis Potosí</option>
+
+                                                <option value="25">Sinaloa</option>
+
+                                                <option value="26">Sonora</option>
+
+                                                <option value="27">Tabasco</option>
+
+                                                <option value="28">Tamaulipas</option>
+
+                                                <option value="29">Tlaxcala</option>
+
+                                                <option value="30">Veracruz</option>
+
+                                                <option value="31">Yucatán</option>
+
+                                                <option value="32">Zacatecas</option>
+
+
+
+                                            </select>
+                                        </div>
+
+                                        <!-- Zipcode -->
+                                        <div class="form-group col-md-2">
+                                            <label for="Zip-input">Código postal</label>
+                                            <input type="text" class="form-control" id="Zip-input" placeholder="Código postal"
+                                                name="Zip" required="">
+                                        </div>
+                                    </div>
+
+
+
+                                    <!--Telefono -->
 
                                     <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
-                                                    <label for="inputphone">Teléfono</label>
-                                                    <input type="phone" class="form-control" id="inputphone"
-                                                        placeholder="Teléfono">
-                                                </div>
-                                               
-                                                <div class="form-group col-md-6">
-                                                    
-                                                </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputphone">Teléfono</label>
+                                                <input type="phone" class="form-control" id="inputphone" placeholder="Teléfono">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+
+                                            </div>
 
 
-                                                    <br>
-                                            <!-- Date of Birth -->
-
-                                                <!-- <div class="form-group col-md-4">
-                                                    <form action="file:///action_page.php">
-                                                        <label for="dateOfBirth">Date of Birth</label>
-                                                        <input type="date" name="DOB" class="form-control" id="dateOfBirth"
-                                                            required="">
-                                                        </form>
-                                                    </div> -->
+                                            <br>
 
 
-
-                                                    <!-- <input type="submit" value="Submit"> -->
-                                           
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <!-- Submit/ back buttons -->
@@ -374,170 +493,177 @@
                                                     <button type="submit" class="btn btn-primary submit" href="confirmation.html"
                                                         form="form-inline">Submit</button>
                                                 </div>
+                                                <br>
                                             </div>
 
-                                    </div>
+                                        </div>
                                 </div>
 
                             </div>
-
-
-
-                             <!-- Footer -->
-    <footer>
-
-
-            <!-- First row with logo -->
-            <div row>
-                <div class=" col row-4 bg-dark" style="background-color: #e5e4e3 ;">
-                    <aside id="themerex-social-widget-3" class="columns1_2 widget-number-1 widgetWrap widget widget_socials">
-                        <div class="widget_inner">
-                            <div class="container">
-    
-    
-                                <div class="row">
-    
-                                    <!-- First row -->
-                                    <div class="col-4">
-                                        <br>
-                                        <a href="http://delei.com.mx">
-                                            <img src="http://delei.com.mx/wp-content/uploads/2015/02/LogoDeleiWhite.png"
-                                                alt="">
-    
-                                        </a>
-                                    </div>
-    
-                                    <!-- Second row text  -->
-                                    <div class="col text-white">
-                                        <br>
-    
-                                        Somos una firma legal, consultora en materia penal,
-                                        familiar y laboral, especializada en brindar un servicio integral basado en
-                                        principios,
-                                        conocimiento y experiencia profesional, a través de una defensa técnica de calidad,
-                                        enfocado al óptimo desarrollo legal y protección de nuestros clientes.
-                                    </div>
-                                </div>
-    
-    
-    
-    
-                                <!-- Dividing line -->
-                                <hr class="my-4" style="height: 2px ;">
-    
-    
-    
-                                <div class="row">
-                                    <!-- Logos de redes sociales y links -->
-                                    <div class="logo_socials socPage col-lg-9">
-    
-                                        <!-- Add font awesome icons -->
-                                        <ul>
-                                            <a href="#" class="fa fa-facebook button button5"></a>
-                                            <a href="#" class="fa fa-twitter button button5"></a>
-                                            <a href="#" class="fa fa-google button button5"></a>
-                                            <a href="#" class="fa fa-linkedin button button5"></a>
-                                            <a href="#" class="fa fa-youtube button button5"></a>
-                                            <a href="#" class="fa fa-instagram button button5"></a>
-                                        </ul>
-                                    </div>
-    
-    
-                                    <!-- Links de empleos y donaciones -->
-                                    <ul class>
-                                        <li>
-                                            <h3><a href="contribucion.html" class="text-white">Colaboraciones</a></h3>
-                                        </li>
-                                        <li>
-                                            <h3><a href="empleos.html" class="text-white ">Empleos</a></h3>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <br>
-    
-    
-                                <!-- Copyright footer -->
-                                <div class="row">
-    
-                                    <div class="col-lg-12 offset-lg-0 p-6">
-                                        <p class="text-center" style="background-color: #454746;color: white;padding-bottom: 20px;padding-top: 20px;">Copyright
-                                            &copy; 2018-Delei</p>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-    
-                    </aside>
-                </div>
-    
-        </footer>
-    
-<br>    
-
-                            <!-- jQuery -->
-                            <script src="./Registration form Page_files/jquery.js"></script>
-
-
-
-                            <!-- Script -->
-                            <script>
-                                // Capture Button Click
-                                $("#add-user").on("click", function (event) {
-                                    // prevent form from trying to submit/refresh the pinputDateOfBirth
-                                    event.preventDefault();
-
-                                    // Capture User Inputs and store them into variables
-                                    var firstName = $("#firstName").val().trim();
-                                    var lastName = $("#lastName").val().trim();
-                                    var email = $("#email-input").val().trim();
-                                    var address = $("#address-input").val().trim();
-                                    var address2 = $("#address2-input").val().trim();
-                                    var city = $("#city-input").val().trim();
-                                    var state = $("#state-input").val().trim();
-                                    var zip = $("#zip-input").val().trim();
-                                    var dateOfBirth = $("#dateOfBirth-input").val().trim();
-
-
-                                    // Console log each of the user inputs to confirm we are receiving them
-                                    console.log(firstName);
-                                    console.log(lastName);
-                                    console.log(email);
-                                    console.log(address);
-                                    console.log(address2);
-                                    console.log(city);
-                                    console.log(state);
-                                    console.log(zip);
-                                    console.log(dateOfBirth);
-
-
-                                    // Output all of the new information into the relevant HTML sections
-                                    $("#firstName-display").text(firstName);
-                                    $("#lastName-display").text(lastName);
-                                    $("#email-display").text(email);
-                                    $("#address-display").text(address);
-                                    $("#address2-display").text(address2);
-                                    $("#city-display").text(city);
-                                    $("#state-display").text(state);
-                                    $("#zip-display").text(zip);
-                                    $("#dateOfBirth-display").text(dateOfBirth);
-
-
-                                });
-                            </script>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
-            </form>
-        </body>
+<br>
+    <!-- Container closing Div -->
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+
+        <!-- First row with logo -->
+        <div row>
+            <div class=" col row-4 bg-dark" style="background-color: #e5e4e3 ;">
+                <aside id="themerex-social-widget-3" class="columns1_2 widget-number-1 widgetWrap widget widget_socials">
+                    <div class="widget_inner">
+                        <div class="container">
+
+
+                            <div class="row">
+
+                                <!-- First row -->
+                                <div class="col-4">
+                                    <br>
+                                    <a href="http://delei.com.mx">
+                                        <img src="http://delei.com.mx/wp-content/uploads/2015/02/LogoDeleiWhite.png"
+                                            alt="">
+
+                                    </a>
+                                </div>
+
+                                <!-- Second row text  -->
+                                <div class="col text-white">
+                                    <br>
+
+                                    Somos una firma legal, consultora en materia penal,
+                                    familiar y laboral, especializada en brindar un servicio integral basado en
+                                    principios,
+                                    conocimiento y experiencia profesional, a través de una defensa técnica de calidad,
+                                    enfocado al óptimo desarrollo legal y protección de nuestros clientes.
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Dividing line -->
+                            <hr class="my-4" style="height: 2px ;">
+
+
+
+                            <div class="row">
+                                <!-- Logos de redes sociales y links -->
+                                <div class="logo_socials socPage col-lg-9">
+
+                                    <!-- Add font awesome icons -->
+                                    <ul>
+                                        <a href="#" class="fa fa-facebook button button5"></a>
+                                        <a href="#" class="fa fa-twitter button button5"></a>
+                                        <a href="#" class="fa fa-google button button5"></a>
+                                        <a href="#" class="fa fa-linkedin button button5"></a>
+                                        <a href="#" class="fa fa-youtube button button5"></a>
+                                        <a href="#" class="fa fa-instagram button button5"></a>
+                                    </ul>
+                                </div>
+
+
+                                <!-- Links de empleos y donaciones -->
+                                <ul class>
+                                    <li>
+                                        <h3><a href="contribucion.html" class="text-white">Colaboraciones</a></h3>
+                                    </li>
+                                    <li>
+                                        <h3><a href="empleos.html" class="text-white ">Empleos</a></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+
+
+                            <!-- Copyright footer -->
+                            <div class="row">
+
+                                <div class="col-lg-12 offset-lg-0 p-6">
+                                    <p class="text-center" style="background-color: #454746;color: white;padding-bottom: 20px;padding-top: 20px;">Copyright
+                                        &copy; 2018-Delei</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+            </div>
+
+    </footer>
+
+    <br>
+
+    <!-- jQuery -->
+    <script src="./Registration form Page_files/jquery.js"></script>
+
+
+
+    <!-- Script -->
+    <script>
+        // Capture Button Click
+        $("#add-user").on("click", function (event) {
+            // prevent form from trying to submit/refresh the pinputDateOfBirth
+            event.preventDefault();
+
+            // Capture User Inputs and store them into variables
+            var firstName = $("#firstName").val().trim();
+            var lastName = $("#lastName").val().trim();
+            var email = $("#email-input").val().trim();
+            var address = $("#address-input").val().trim();
+            var address2 = $("#address2-input").val().trim();
+            var city = $("#city-input").val().trim();
+            var state = $("#state-input").val().trim();
+            var zip = $("#zip-input").val().trim();
+            var dateOfBirth = $("#dateOfBirth-input").val().trim();
+
+
+            // Console log each of the user inputs to confirm we are receiving them
+            console.log(firstName);
+            console.log(lastName);
+            console.log(email);
+            console.log(address);
+            console.log(address2);
+            console.log(city);
+            console.log(state);
+            console.log(zip);
+            console.log(dateOfBirth);
+
+
+            // Output all of the new information into the relevant HTML sections
+            $("#firstName-display").text(firstName);
+            $("#lastName-display").text(lastName);
+            $("#email-display").text(email);
+            $("#address-display").text(address);
+            $("#address2-display").text(address2);
+            $("#city-display").text(city);
+            $("#state-display").text(state);
+            $("#zip-display").text(zip);
+            $("#dateOfBirth-display").text(dateOfBirth);
+
+
+        });
+    </script>
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
 
 </html>
 

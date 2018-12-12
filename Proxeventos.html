@@ -25,15 +25,206 @@
 
 
     <style>
-        h1 {
-            font-family: "Times New Roman", Times, serif;
+     
+
+            h1 {
+        font-family: "Times New Roman", Times, serif;
+        color:black;
+        text-shadow: 1px;
+        /* -webkit-text-stroke-width: 1.5px; */
+    /* -webkit-text-stroke-color:black; */
+    }
+    
+     h3 {
+        color: black;
+        
+        text-shadow: 1px;
+    }
+    
+    .logo {
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    body {
+       
+        background-color: white;
+    }
+    
+    
+    /* image opacity script */
+    /* img {
+        opacity: 0.3;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        
+    } */
+    
+    #logo {
+    
+    
+    }
+    
+    .logo {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo .btn {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .logo .btn:hover {
+        background-color: black;
+    }
+    
+    .button {
+          background-color: #4CAF50;
+          /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+    
+        .button1 {
+          border-radius: 2px;
+        }
+    
+        .button2 {
+          border-radius: 4px;
+        }
+    
+        .button3 {
+          border-radius: 8px;
+        }
+    
+        .button4 {
+          border-radius: 12px;
+        }
+    
+        .button5 {
+          border-radius: 50%;
+        }
+    
+        /* Dimensions of the icon buttons */
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 62px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 30px;
+        }
+    
+        .fa:hover {
+          opacity: 0.7;
+        }
+    
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+    
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+    
+        .fa-google {
+          background: #dd4b39;
+          color: white;
+        }
+    
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+    
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+    
+        .fa-instagram {
+          background: #125688;
+          color: white;
         }
 
-        .logo {
-            font-family: "Times New Roman", Times, serif;
-        }
+        // Overrides
+.well, .list-group {
+  margin-bottom: 5px;
+  border-radius: 0;
+}
 
-    </style>
+// Helpers
+.text-lg {
+  font-size: 1.15em;
+}
+
+// Date Classes
+.announce-date-day-text,
+.announce-date-day-num,
+.announce-date-year {
+  display: block;
+}
+
+.announce-date {
+  line-height: 1;
+}
+
+
+// Flex Helper Classes
+.flex {
+  display: flex;
+}
+.flex-expand {
+  flex: 1 1 0%;
+}
+.flex-align-center {
+  align-self: center;
+  width: 100%;
+}
+.flex-row {
+  @extend .row !optional;
+  display: flex;
+}
+
+// Unused
+
+.link-expand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.row {
+}
+.col {
+}
+        </style>
 
 <!-- Imagen de arriba 2 -->
 
@@ -129,20 +320,7 @@
 
                     </div>
                 </li>
-
-
-
-
-
             </ul>
-
-            <!-- Search placeholder -->
-
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-
 
         </div>
     </nav>
@@ -150,99 +328,172 @@
 
     <!-- Container -->
 
-    <div class="container" style="background-color: grey;">
+    <div class="container" style="background-color: col-lg-6">
 
-         <!-- top of the page title  -->
-         <div class="jumbotron" style="background-color: transparent">
-                <h1 class="text-center" style="-webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color:snow; text-size-adjust: 40 px;">Associados</h1>
-                <hr>
-                <h1 class="text-center" style="color: snow">Nuestro Equipo</h1>
-                        
+<br>
+        <!-- Announcements Title -->
+                    <h3>Flex Nesting</h3>
                     <br>
-    
-                    <!-- Registration Form -->
-    
-                    <div class="row">
-                        <div class="col-lg-12">
-    
-    
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h2 class="panel-title">Registration form</h2>
-                                    <br>
-                                    <p>Please fill in this form to create an account.</p>
-                                </div>
-                                <div class="panel-body">
 
 
-
-        <!-- OUR TEAM Catalog -->
-            <li class="contact-item-wrapper ourTeamEntry ourTeamEntryHide ourTeamEntryFilter" data-uid="579b2c82-9efc-4d4a-b9c9-80a1e6fbc737" role="option" aria-selected="false">
-                    <div class="sf_cols contact-item-container">
-                        <div class="contact-item-2col-left">
-            
-            
-                                                <!-- Left -->
-            
-                                               
-                                               <div class="shadow-wrapper">
-                                                    <div class="contact-img">
-                                                        <a href="/our-team/partners/william-r-dougherty">
-            
-                                                        <img src="/images/default-source/employees/billdougherty-9321_0971_v1.tmb-thmb200mh.jpg?sfvrsn=2" alt="">
-                                                         </a>   
-                                                            </div>
-                                                   
-                                                <div class="add-to-contact-list"><a href="javascript:void(0)" class="addToContactList" data-contactid="4e6dcb0e-743d-6a02-aaf8-ff0000765f2c">Add to Contact List</a></div>
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 well well-sm text-center">
+                            <div class="announce-date flex-align-center">
+                                <br>
+                              <span class="announce-date-day-text text-lg">Sun</span>
+                              <span class="announce-date-day-num text-lg">01</span>
+                              <span class="announce-date-year text-lg">2018</span>
                             </div>
-                                                <!-- END Left -->
-            
-                                        </div>
-                        <div runat="server" class="contact-item-2col-right">
-            
-                            <!-- Right -->
-                            <div class="sf_cols contact-details-container">
-                                <div class="sf_cols contact-details-container-inner">
-                                    <div class="contact-details-2col-left">
-                                        <div class="contact-detail-main">
-                                            <div class="contact-name">
-                                                <a href="/our-team/partners/Gonzálo-Martínez-Martínez">Gonzálo Martínez Martínez</a>
-                                            </div>
-                                            <div class="contact-title">Partner<br>Chairman of the Executive Committee<br></div>
-                                        </div>
-                                    </div>
-                                    <div class="contact-details-2col-right">
-                                        <div class="contact-details-sub">
-                                            <div class="contact-office">Monterrey</div>
-                                            <div class="contact-phone">(812)141-7372</div>
-                                            <div class="contact-Cell">(811)999-9743</div>
-                                            <div class="contact-email">
-                            <a href="mailto:gonzalo@delei.com.mex">gonzalo@delei.com.mex</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                          </div>
+                          <div class="col flex col-lg-9 col-sm-6 well well-sm text-left">
+                            <div class="announce-title  flex-align-center"><a href="/node/2" class="announce-title-link" hreflang="en">Placerat tortor in elementum augue...</a></div>
+                          </div>
+                          <div class="col flex col-lg-1 col-sm-3 well well-sm text-center">
+                            <div class="announce-link flex flex-expand">
+                              <a href="/node/2" class="flex flex-expand" hreflang="en">
+                                <i class="fa fa-2x fa-angle-double-right flex-align-center" aria-hidden="true"></i>
+                              </a>
                             </div>
-            
-                            <div class="sf_cols contact-focus-container" style="display:none">
-                                <div class="sf_cols contact-focus-container-inner">
-                                    <div class="contact-focus-1col">
-                                        <h3>Practice Focus</h3>
-                                        <ul>
-                                                <li><a href="/client-services/industry/healthcare" class="column-tagged-item">Healthcare</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-            
-                        </div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-            
-                <!-- END Section -->
-            
-                                </li>
+                    
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 well well-sm text-center">
+                            <div class="announce-date flex-align-center">
+                              <span class="announce-date-day-text text-lg">Thu</span>
+                              <span class="announce-date-day-num text-lg">26</span>
+                              <span class="announce-date-year text-lg">2017</span>
+                            </div>
+                          </div>
+                          <div class="col flex col-lg-9 col-sm-6 well well-sm text-left">
+                            <div class="announce-title  flex-align-center"><a href="/node/2" class="announce-title-link" hreflang="en">Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque! Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque!</a></div>
+                          </div>
+                          <div class="col flex col-lg-1 col-sm-3 well well-sm text-center">
+                            <div class="announce-link flex flex-expand">
+                              <a href="/node/2" class="flex flex-expand" hreflang="en">
+                                <i class="fa fa-2x fa-angle-double-right flex-align-center" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                  
+                  </div>
+                  <div class="container col-lg-6">
+                    
+                    <h3>Anchor Wrapping</h3>
+                    <p>Allows for full box link</p>
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 well well-sm text-center">
+                            <div class="announce-date flex-align-center">
+                              <span class="announce-date-day-text text-lg">Thu</span>
+                              <span class="announce-date-day-num text-lg">26</span>
+                              <span class="announce-date-year text-lg">2017</span>
+                            </div>
+                          </div>
+                          <a href="/node/2" class="col flex col-lg-9 col-sm-6 well well-sm text-left announce-title-link" hreflang="en">
+                            <div class="announce-title flex-align-center">Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque! Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque!</div>
+                          </a>
+                          <a href="#" class="col flex col-lg-1 col-sm-3 well well-sm text-center">
+                            <div class="announce-link flex-align-center">
+                              <i class="fa fa-2x fa-angle-double-right" aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 well well-sm text-center">
+                            <div class="announce-date flex-align-center">
+                              <span class="announce-date-day-text text-lg">Sun</span>
+                              <span class="announce-date-day-num text-lg">01</span>
+                              <span class="announce-date-year text-lg">2018</span>
+                            </div>
+                          </div>
+                          <a href="/node/2" class="col flex col-lg-9 col-sm-6 well well-sm text-left announce-title-link" hreflang="en">
+                            <div class="announce-title  flex-align-center">Placerat tortor in elementum augue...</div>
+                          </a>
+                          <a href="#" class="col flex col-lg-1 col-sm-3 well well-sm text-center">
+                            <div class="announce-link flex-align-center">
+                              <i class="fa fa-2x fa-angle-double-right" aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                  
+                  </div>
+                  <div class="container col-lg-6">
+                    
+                    <h4>No Wells</h4>
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 text-center">
+                            <div class="announce-date flex-align-center">
+                              <span class="announce-date-day-text text-lg">Thu</span>
+                              <span class="announce-date-day-num text-lg">26</span>
+                              <span class="announce-date-year text-lg">2017</span>
+                            </div>
+                          </div>
+                          <a href="/node/2" class="col flex col-lg-9 col-sm-6 text-left announce-title-link" hreflang="en">
+                            <div class="announce-title flex-align-center">Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque! Placerat tortor in elementum augue, auctor sit aenean, dictumst amet, in scelerisque!</div>
+                          </a>
+                          <a href="#" class="col flex col-lg-1 col-sm-3 text-center">
+                            <div class="announce-link flex-align-center">
+                              <i class="fa fa-2x fa-angle-double-right" aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled list-group">
+                        <li class="row flex-row">
+                          <div class="col flex col-lg-2 col-sm-3 text-center">
+                            <div class="announce-date flex-align-center">
+                              <span class="announce-date-day-text text-lg">Sun</span>
+                              <span class="announce-date-day-num text-lg">01</span>
+                              <span class="announce-date-year text-lg">2018</span>
+                            </div>
+                          </div>
+                          <a href="/node/2" class="col flex col-lg-9 col-sm-6 text-left announce-title-link" hreflang="en">
+                            <div class="announce-title flex-align-center">Placerat tortor in elementum augue...</div>
+                          </a>
+                          <a href="#" class="col flex col-lg-1 col-sm-3 text-center">
+                            <div class="announce-link flex-align-center">
+                              <i class="fa fa-2x fa-angle-double-right" aria-hidden="true"></i>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  
+                  
+                  
 
+    </div>
 
      <!-- Footer -->
      <footer>
