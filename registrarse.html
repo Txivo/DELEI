@@ -321,12 +321,12 @@
 
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Nombre</label>
-                                            <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                                            <label for="input-nombre">Nombre</label>
+                                            <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" name="nombre">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="inputPassword4">Apellido</label>
-                                            <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                                            <label for="input-apellido">Apellido</label>
+                                            <input type="text" class="form-control" id="input-apellido" placeholder="Apellido" name="apellidoPaterno">
                                         </div>
                                     </div>
 
@@ -334,22 +334,22 @@
 
                                         <!-- Email -->
                                         <div class="form-group col-md-4">
-                                            <label for="email-input">Correo</label>
-                                            <input type="email" class="form-control" id="email-input" placeholder="nombre@ejemplo.com"
-                                                name="Email" required="">
+                                            <label for="Correo-input">Correo</label>
+                                            <input type="email" class="form-control" id="Correo-input" placeholder="nombre@ejemplo.com"
+                                                name="correo" required="">
                                         </div>
 
                                         <!-- Password -->
                                         <div class="form-group col-md-4">
-                                            <label for="Password-input">Contraseña</label>
-                                            <input type="password" class="form-control" id="Password-input" placeholder="Contraseña"
-                                                name="Password" required="">
+                                            <label for="password-input">Contraseña</label>
+                                            <input type="password" class="form-control" id="password-input" placeholder="Contraseña"
+                                                name="password" required="">
                                         </div>
 
                                         <!-- Password confirmation-->
                                         <div class="form-group col-md-4">
-                                            <label for="Password2-input">Comfirmar Contraseña</label>
-                                            <input type="password" class="form-control" id="Password2-input"
+                                            <label for="password2-input">Comfirmar Contraseña</label>
+                                            <input type="password" class="form-control" id="password2-input"
                                                 placeholder="Comfirmar Contraseña" name="Password-comfirmation"
                                                 required="">
                                         </div>
@@ -358,32 +358,32 @@
 
                                     <!-- Address -->
                                     <div class="form-group">
-                                        <label for="address-input">Dirección</label>
-                                        <input type="text" class="form-control" id="address-input" placeholder="1234 calle ave."
-                                            name="address" required="">
+                                        <label for="dirección-input">Dirección</label>
+                                        <input type="text" class="form-control" id="dirección-input" placeholder="1234 calle ave."
+                                            name="dirección" required="">
                                     </div>
 
                                     <!-- Address 2 -->
                                     <div class="form-group">
-                                        <label for="address2-input">Dirección 2</label>
-                                        <input type="text" class="form-control" id="address2-input" placeholder="Colonia, piso, interior, etc"
-                                            name="address2" required="">
+                                        <label for="dirección-input">Dirección 2</label>
+                                        <input type="text" class="form-control" id="dirección-input" placeholder="Colonia, piso, interior, etc"
+                                            name="dirección2" required="">
                                     </div>
 
                                     <!-- City -->
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label for="city-input">Ciudad</label>
-                                            <input type="text" class="form-control" id="city-input" placeholder="Ciudad"
-                                                name="Ciudad" required="">
+                                            <label for="ciudad-input">Ciudad</label>
+                                            <input type="text" class="form-control" id="ciudad-input" placeholder="Ciudad"
+                                                name="ciudad" required="">
                                         </div>
 
 
 
                                         <!-- Dropdown estados de México -->
                                         <div class="form-group col-md-4">
-                                            <label for="state-input">Estado</label>
-                                            <select id="state-input" class="form-control" name="state" required="">
+                                            <label for="estado-input">Estado</label>
+                                            <select id="estado-input" class="form-control" name="estado" required="">
                                                 <option selected="">Seleccionar...</option>
 
                                                 <option value="0">Todo México</option>
@@ -459,9 +459,9 @@
 
                                         <!-- Zipcode -->
                                         <div class="form-group col-md-2">
-                                            <label for="Zip-input">Código postal</label>
-                                            <input type="text" class="form-control" id="Zip-input" placeholder="Código postal"
-                                                name="Zip" required="">
+                                            <label for="código-input">Código postal</label>
+                                            <input type="text" class="form-control" id="código-input" placeholder="Código postal"
+                                                name="codigo" required="">
                                         </div>
                                     </div>
 
@@ -472,8 +472,8 @@
                                     <form>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label for="inputphone">Teléfono</label>
-                                                <input type="phone" class="form-control" id="inputphone" placeholder="Teléfono">
+                                                <label for="telefono-input">Teléfono</label>
+                                                <input type="phone" class="form-control" id="telefono-input" placeholder="Teléfono" name="teléfono">
                                             </div>
 
                                             <div class="form-group col-md-6">
@@ -507,6 +507,7 @@
     <!-- Container closing Div -->
     </div>
 
+    
 
 
     <!-- Footer -->
@@ -617,39 +618,45 @@
             event.preventDefault();
 
             // Capture User Inputs and store them into variables
-            var firstName = $("#firstName").val().trim();
-            var lastName = $("#lastName").val().trim();
-            var email = $("#email-input").val().trim();
-            var address = $("#address-input").val().trim();
-            var address2 = $("#address2-input").val().trim();
-            var city = $("#city-input").val().trim();
-            var state = $("#state-input").val().trim();
-            var zip = $("#zip-input").val().trim();
-            var dateOfBirth = $("#dateOfBirth-input").val().trim();
+            var primerNombre = $("#input-nombre").val().trim();
+            var apellidoPaterno = $("#input-apellido").val().trim();
+            var correo = $("#Correo-input").val().trim();
+            var password = $("#password-input").val().trim();
+            var password2 = $("#password2-input").val().trim();
+            var dirección = $("#dirección-input").val().trim();
+            var dirección2 = $("#dirección2-input").val().trim();
+            var ciudad = $("#ciudad-input").val().trim();
+            var estado = $("#estado-input").val().trim();
+            var codigo = $("#codigo-input").val().trim();
+            var telefono = $("#telefono-input").val().trim();
 
 
             // Console log each of the user inputs to confirm we are receiving them
-            console.log(firstName);
-            console.log(lastName);
-            console.log(email);
-            console.log(address);
-            console.log(address2);
-            console.log(city);
-            console.log(state);
-            console.log(zip);
-            console.log(dateOfBirth);
+            console.log(primerNombre);
+            console.log(apellidoPaterno);
+            console.log(correo);
+            console.log(password);
+            console.log(password2);
+            console.log(dirección);
+            console.log(dirección2);
+            console.log(ciudad);
+            console.log(estado);
+            console.log(codigo);
+            console.log(telefono);
 
 
             // Output all of the new information into the relevant HTML sections
-            $("#firstName-display").text(firstName);
-            $("#lastName-display").text(lastName);
-            $("#email-display").text(email);
-            $("#address-display").text(address);
-            $("#address2-display").text(address2);
-            $("#city-display").text(city);
-            $("#state-display").text(state);
-            $("#zip-display").text(zip);
-            $("#dateOfBirth-display").text(dateOfBirth);
+            $("#nombre-display").text(primerNombre);
+            $("#apellido-display").text(apellidoPaterno);
+            $("#correo-display").text(correo);
+            $("#password-display").text(password);
+            $("#password2-display").text(password2);
+            $("#dirección-display").text(dirección);
+            $("#dirección2-display").text(dirección2);
+            $("#ciudad-display").text(ciudad);
+            $("#estado-display").text(estado);
+            $("#codigo-display").text(codigo);
+            $("#phone-display").text(telefono);
 
 
         });
@@ -663,16 +670,6 @@
     </div>
     </div>
     </form>
-</body>
-
-</html>
-
-
-
-</div>
-
-
-
 </body>
 
 </html>
