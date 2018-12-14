@@ -29,7 +29,7 @@
 
             h1 {
         font-family: "Times New Roman", Times, serif;
-        color:black;
+        color:white;
         text-shadow: 1px;
         /* -webkit-text-stroke-width: 1.5px; */
     /* -webkit-text-stroke-color:black; */
@@ -58,7 +58,7 @@
         
     } */
     
-    #logo {
+    #iniciar {
     
     
     }
@@ -172,181 +172,272 @@
           color: white;
         }
 
-        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
-
-$bg:#1a1f25;
-$button:#e6b333;
-$border:#22272d;
-
-
-
-*, *:after, *:before{
-  box-sizing:border-box;
+     *{  
+  margin:0;
+  padding:0;
 }
 
-html, body {background:$bg;font-family: 'Roboto', sans-serif;}
-
-.clear {clear:both;}
-
-#man-people-user, #lock-locker {
-  fill:white;  
+h1 {
+  font-size: 2em;
+  font-family: "Core Sans N W01 35 Light";
+  font-weight: normal;
+  margin: .67em 0;
+  display: block;
 }
 
-.wrapper{
-  width:300px; 
-  margin:12% auto;
+#registered {
+    margin-top: 50px;
 }
 
-form {position:relative;}
-
-.clear {clear:both;}
-.sign-in {
-  float:left; 
-  color:white;
-  font-size:1.3em;
-}
-.button {
-  float:right;
-  color:#7f8084;
-  border:1px solid $border;
-  padding:7px 15px;
-  border-radius:3px;
-  font-size:0.8em;
-  cursor:pointer; 
-}
-.button:hover {color:#d3d3d3}
-.lock {
-  position:absolute;
-  width:30px;
-  height:30px;
-  margin-top:10px;
-  padding:7px; 
-  left:5px;
-  &::after {
-    content:""; 
-    width:1px;
-    height:30px;
-    position:absolute;
-    background:$border; 
-    top:0px; 
-    left:100%; 
-  }
-}
-.user {
- 
-  position:absolute;
-  width:30px;
-  height:30px;
-  margin-top:10px;
-  padding:7px;
-  left:5px;
-  &::after {
-    content:""; 
-    width:1px;
-    height:30px;
-    position:absolute;
-    background:$border; 
-    top:0px; 
-    left:100%; 
-  }
+#registered img {
+    margin-bottom: 0px;
+    width: 100px;
+    height: 100px;
 }
 
-input {
-  width:100%;
-  padding:5px;
-  height:40px;
-  border-radius:3px;
-  margin:5px 0;
-  outline: none;
-}
-input[type="text"]:focus, input[type="password"]:focus {
-  border:1px solid white;
-  box-shadow:none;
-}
-.user-input:focus .user{
-  background:white !important;
-   
-} 
-
-
-input[type="text"]{
-  background:transparent; 
-  border:2px solid $border;
-  padding-left:45px;
-  color:$button;
-}
-
-input[type="password"]{
-  background:transparent; 
-  border:2px solid $border;
-  padding-left:45px;
-  color:$button;
-}
-
-input[type="submit"]{
-  background:$button; 
-  border:none;
-  color:white;
-  text-align:center;
-  font-size:0.8em;
-  cursor:pointer;
-}
-
-input[type="radio"]{
-  display:none; 
-}
-.radio-check {
-  width:50px;
-  height:20px;
-  border:1px solid $border;
-  border-radius:30px;
-  margin-top:10px;
-  float:left;
-  text-align:center;
-  padding:4px 0;
-  color:$button;
-  font-size:0.65em;
-  position:relative;
-  label{
-    margin:0 2px;
-    cursor:pointer;
-  }
-  .switch-selection{
+#registered span {
+    clear: both;
     display: block;
-    position: absolute;
-    width:11px;
-    height:11px; 
-    border-radius:50%;
-    background:#babbbd;
-    margin-top:-11px;
-    margin-left:11px; 
-    transition: 0.2s ease-out;
-  } 
-  
 }
 
- .radio-yes:checked ~ .switch-selection{
-    margin-left:25px !important;
-  } 
-  
+/* img {
+    margin-bottom: 20px;
+} */
 
-.check-label {
-  font-size:0.8em;
-  color:#7f8084;
-  margin-top:10px;
-  float:left;
-  padding:3px 0;
-  margin-left:10px;
+.avatar {
+    margin: 10px 0 20px 0;
 }
 
+.module{
+  position:relative;
+  top:10%;    
+  height:65%;
+  width:450px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
-.forgot-label {
-  font-size:0.8em;
-  color:#7f8084;
-  margin-top:10px;
-  float:right;
-  padding:3px 0;
-  cursor:pointer;
+.user {
+    color: #66d8fc;
+    font-weight: bold;
+}
+
+.userlist {
+    float:left;
+    padding: 30px;
+}
+
+.userlist span {
+    color: #0590fc;
+}
+
+.welcome{
+  position:relative;
+  top:30%;    
+  height:65%;
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+}
+
+::-moz-selection {
+  background: #19547c;
+}
+::selection {
+  background: #19547c;
+}
+input::-moz-selection {
+  background: #037db6;
+}
+input::selection {
+  background: #037db6;
+}
+
+body{
+  color: #fff;
+  background-color:#f0f0f0;
+  font-family:helvetica;
+  background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
+}
+
+.body-content{
+  position:relative;
+  top:20px;
+  height:700px;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto; 
+  background: transparent;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+  height:30px;
+  width:100%;;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  padding: 0 10px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+select:hover,
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border: 2px solid;
+  border-color: #1e5f99;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.btn {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 3px 0;
+  padding: 6px 20px;
+  font-size: 15px;
+  line-height: 20px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #00aeff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.btn.active,
+.btn:active {
+  padding: 7px 19px 5px 21px;
+}
+.btn.disabled:active,
+.btn[disabled]:active,
+.btn.disabled.active,
+.btn[disabled].active {
+  padding: 6px 20px !important;
+}
+.btn:hover,
+.btn:focus {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+.btn:active,
+.btn.active {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
+}
+.btn-primary {
+  background-color: #098cc8;
+  color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  background-image: -webkit-linear-gradient(top, #0f9ada, #0076ad);
+  background-image: linear-gradient(to bottom, #0f9ada, #0076ad);
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #21b0f1;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #006899;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+  box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-image: -webkit-linear-gradient(top, #37c0ff, #0097dd);
+  background-image: linear-gradient(to bottom, #37c0ff, #0097dd);
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-image: -webkit-linear-gradient(top, #006ea1, #00608d);
+  background-image: linear-gradient(to bottom, #006ea1, #00608d);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset, 0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+}
+.btn-block {
+  display: block;
+  width: 40%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.alert {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4px 20px 4px 20px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-shadow: none;
+  position: relative;
+  background-color: #272e3b;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #000;
+  box-shadow: 0 0 0 1px #363d49 inset, 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+.alert-error {
+  color: #f00;
+  background-color: #360e10;
+  box-shadow: 0 0 0 1px #551e21 inset, 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+.alert:empty{
+    display: none;
+}
+.alert-success {
+  color: #21ec0c;
+  background-color: #15360e;
+  box-shadow: 0 0 0 1px #2a551e inset, 0 5px 10px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -443,117 +534,43 @@ input[type="radio"]{
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="registrarse.html">Registrarse</a>
                         <a class="dropdown-item" href="iniciar.html">Iniciar</a>
-
-
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!-- sign in form final  -->
 
-    <div class="container" style="background-color: grey;">
+    <link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="form.css" type="text/css">
+<div class="body-content">
+  <div class="module">
+    <h1>Iniciar session</h1>
+    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
+      <div class="alert alert-error"></div>
+    
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
+      
+      <!-- Submit button -->
+      <input type="submit" value="Registrarse" name="register" class="btn btn-block btn-primary" />
+      <input type="submit" value="Iniciar session" name="register" class="btn btn-block btn-primary" />
 
-<!-- ICONS -->
-<svg id="svg-source" height="0" version="1.1"  xmlns="http://www.w3.org/2000/svg" 
-xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
- <g id="man-people-user" data-iconmelon="Streamline Icon Set:de32eb2621491c1a881a9fe846236da1">
-    <g id="Expanded">
-      <g>
-        <g>
-          <path  d="M16.028,20c-4.764,0-8.639-4.486-8.639-10s3.875-10,8.639-10c4.763,0,8.638,4.486,8.638,10
-				S20.791,20,16.028,20z M16.028,1.333C12,1.333,8.722,5.221,8.722,10s3.277,8.667,7.306,8.667c4.029,0,7.306-3.888,7.306-8.667
-				S20.057,1.333,16.028,1.333z"></path>
-        </g>
-      <g>
-         <path  d="M31.988,32H0.012v-4.515c0-1.967,1.245-3.733,3.097-4.395l8.224-2.266v-2.77h1.333v3.785L3.51,24.361
-				c-1.275,0.458-2.165,1.72-2.165,3.124v3.182h29.309v-3.182c0-1.404-0.889-2.666-2.213-3.139l-9.107-2.506v-3.758h1.332v2.742
-				l8.178,2.251c1.9,0.677,3.145,2.442,3.145,4.409V32z"></path>
-       </g>
-       <g>
-                    <path  d="M21.865,8.812c-0.045,0-0.09-0.001-0.137-0.003c-1.5-0.055-3.25-1.004-4.361-2.287
-				C16.59,7.513,15.48,8.15,14.106,8.383c-2.403,0.413-5.152-0.51-5.988-1.321l0.928-0.957c0.403,0.391,2.69,1.329,4.836,0.964
-				c1.332-0.226,2.292-0.911,2.854-2.034l0.558-1.114l0.617,1.082c0.738,1.292,2.508,2.425,3.867,2.475
-				c0.604,0.016,1.033-0.165,1.307-0.571l1.105,0.745C23.686,8.403,22.863,8.812,21.865,8.812z"></path>
-                  </g>
-                </g>
-              </g>
-            </g>
-            <g id="lock-locker" data-iconmelon="Streamline Icon Set:5d43c6f45cdbecfd5b8a12bc9e5dd33c">
-              <g id="Expanded">
-                <g>
-                  <g>
-                    <circle  cx="16" cy="20" r="1.333"></circle>
-                  </g>
-          <g>
-              <path  d="M16,25.333c-0.369,0-0.667-0.298-0.667-0.666v-4C15.333,20.298,15.631,20,16,20s0.667,0.298,0.667,0.667
-				v4C16.667,25.035,16.369,25.333,16,25.333z"></path>
-          </g>
-          <g>
-            <path  d="M28,32H4V12h24V32z M5.333,30.667h21.333V13.333H5.333V30.667z"></path>
-        </g>
-        <g>
-         <path  d="M24,12.667h-1.333V8c0-3.676-2.991-6.667-6.667-6.667c-3.676,0-6.667,2.99-6.667,6.667v4.667H8V8
-				c0-4.412,3.588-8,8-8c4.411,0,8,3.588,8,8V12.667z"></path>
-           </g>
-        </g>
-      </g>
-   </g>
-</svg>
-<!-- ICONS -->
-
-
-
-
-<div class="wrapper">
-  <div class="header">
-    <h3 class="sign-in">Sign in</h3>
-    <div class="button">
-      Register
-    </div>
+      <!-- lost password -->
+      <div class="radio-check">   
+        <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
+        <label for="no"><i class="fa fa-times"></i></label>  
+        <input type="radio" class="radio-yes" id="yes" name="remember" value="yes">
+        <label for="yes"><i class="fa fa-check"></i></label>
+        <span class="switch-selection"></span>
+      </div>
+        <span class="check-label">Remember me</span>
+        <span class="forgot-label">Lost your password?</span>
+        <div class="clear"></div>
+    </form>
   </div>
-   <div class="clear"></div> 
-  <form action="#">
-      <div>
-         <label class="user" for="text">
-           <svg viewBox="0 0 32 32">
-                    <g filter="">
-                      <use xlink:href="#man-people-user"></use>
-                    </g>
-                  </svg>
-         </label>
-        <input class="user-input" type="text" name="name" id="name" placeholder="My name is"  />
-      </div> 
-      <div>
-        <label class="lock" for="password">
-          <svg viewBox="0 0 32 32">
-             <g filter="">
-               <use xlink:href="#lock-locker"></use>
-              </g>
-            </svg>  
-        </label>
-        <input type="password" name="name" id="name" placeholder="" />
-      </div> 
-     <div>
-      <input type="submit" value="Sign in" />
-    </div>
-    <div class="radio-check">   
-      <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
-      <label for="no"><i class="fa fa-times"></i></label>  
-      <input type="radio" class="radio-yes" id="yes" name="remember" value="yes">
-      <label for="yes"><i class="fa fa-check"></i></label>
-      <span class="switch-selection"></span>
-    </div>
-      <span class="check-label">Remember me</span>
-      <span class="forgot-label">Lost your password?</span>
-      <div class="clear"></div>
-  </form>  
 </div>
-
-
-
-
-    </div>
 
 
      <!-- Footer -->
