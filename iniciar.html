@@ -255,7 +255,7 @@ input::selection {
 }
 
 body{
-  color: #fff;
+  color: black;
   background-color:#f0f0f0;
   font-family:helvetica;
   background:url("/Users/txivojuarezlap/Desktop/DELEI/Imagenes/signinimg.png") #ffffff no-repeat center top;
@@ -440,6 +440,24 @@ input[type="email"]:focus {
   box-shadow: 0 0 0 1px #2a551e inset, 0 5px 10px rgba(0, 0, 0, 0.75);
 }
 
+/* Extra styles for the cancel button */
+.cancelbtn {
+    margin-right: 20 px;
+  width: auto;
+  padding: 5px 9px;
+  background-color: #f44336;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
 
 
         </style>
@@ -558,16 +576,26 @@ input[type="email"]:focus {
       <input type="submit" value="Iniciar session" name="register" class="btn btn-block btn-primary" />
 
       <!-- lost password -->
-      <div class="radio-check">   
-        <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
-        <label for="no"><i class="fa fa-times"></i></label>  
-        <input type="radio" class="radio-yes" id="yes" name="remember" value="yes">
-        <label for="yes"><i class="fa fa-check"></i></label>
-        <span class="switch-selection"></span>
-      </div>
-        <span class="check-label">Remember me</span>
-        <span class="forgot-label">Lost your password?</span>
-        <div class="clear"></div>
+      
+        
+        
+        <!-- Remember me -->
+        <div class="row">
+                <div class="col">
+        <label>
+                <input type="checkbox" checked="checked" name="remember" style="text-color:black;"> Remember me
+              </label>
+              </div>
+            
+
+              <div class="row">
+                    <div class="col">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </div>
+                
+        </div>
     </form>
   </div>
 </div>
