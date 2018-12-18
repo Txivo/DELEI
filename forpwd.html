@@ -21,7 +21,7 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Delei</title>
+    <title>Olvido contraseña</title>
 
 
     <style>
@@ -31,6 +31,7 @@
         font-family: "Times New Roman", Times, serif;
         color:black;
         text-shadow: 1px;
+        text-align: center;
         /* -webkit-text-stroke-width: 1.5px; */
     /* -webkit-text-stroke-color:black; */
     }
@@ -558,48 +559,52 @@ input[type="email"]:focus {
         </div>
     </nav>
 
-    <!-- sign in form final  -->
-
-    <link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="form.css" type="text/css">
-<div class="body-content">
-  <div class="module">
-    <h1>Iniciar session</h1>
-    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
-      <div class="alert alert-error"></div>
     
-      <input type="email" placeholder="Email" name="email" required />
-      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
-      
-      <!-- Submit button -->
-      <input type="submit" value="Registrarse" name="register" class="btn btn-block btn-primary" />
-      <input type="submit" value="Iniciar session" name="iniciar" class="btn btn-block btn-primary" />
+ <!-- sign in form final  -->
+ <div class="container" style="background-color: transparent">
+        <br>
+<!-- top of the page title  -->
+<h1>Olvido Su Contraseña</h1>
 
-      <!-- lost password -->
-      
-        
-        
-        <!-- Remember me -->
-        <div class="row">
-                <div class="col">
-        <label>
-                <input type="checkbox" checked="checked" name="remember" style="text-color:black;"> Remember me
-              </label>
-              </div>
-            
+<hr>
 
-              <div class="row">
-                    <div class="col">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-                    </div>
-                </div>
-                
+ <link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
+ <link rel="stylesheet" href="form.css" type="text/css">
+ <div class="body-content">
+   <div class="module">
+
+    <!-- Text if needed -->
+     <h1></h1>
+     <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
+       <div class="alert alert-error"></div>
+     
+       <div class="form-group ">
+            <label for="Correo-input">Correo</label>
+            <input type="email" class="form-control" id="Correo-input" placeholder="nombre@ejemplo.com"
+                name="correo" required="">
         </div>
-    </form>
-  </div>
-</div>
-
+       <!-- new-password -->
+       <div class="form-group ">
+            <label for="password-input"> Nueva Contraseña</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Contraseña"
+                name="password" required="">
+        </div>
+        <!-- Retype new-password -->
+        <div class="form-group ">
+                <label for="password2-input">Comfirmar Contraseña</label>
+                <input type="password" class="form-control" id="password2-input"
+                    placeholder="Comfirmar Contraseña" name="Password-comfirmation"
+                    required="">
+            </div>
+       <!-- Submit button -->
+      
+       <input type="submit" value="Comfirmar" name="iniciar" class="btn btn-block btn-primary" />
+ 
+               
+         </div>
+     </form>
+   </div>
+ </div>
 
      <!-- Footer -->
      <footer>
