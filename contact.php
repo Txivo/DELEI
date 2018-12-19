@@ -9,5 +9,5 @@ if (isset($_POST['submit'])){
 
 
     $mailTo = "info@delei.org.mx";
-    
+    $header = "from: my "
 }
