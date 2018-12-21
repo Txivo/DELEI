@@ -2,7 +2,7 @@ var config = {
     apiKey: "AIzaSyD9qKKE_hLxlEzPUS5jRUAlsGuNVac1pn0",
     authDomain: "fir-70a0d.firebaseapp.com",
     databaseURL: "https://fir-70a0d.firebaseio.com",
-    projectId: "fir-70a0d",
+    projectId: "delei-225220",
     storageBucket: "",
     messagingSenderId: "955749658359"
   };
