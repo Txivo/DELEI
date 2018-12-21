@@ -1,10 +1,10 @@
 var config = {
     apiKey: "AIzaSyD9qKKE_hLxlEzPUS5jRUAlsGuNVac1pn0",
-    authDomain: "fir-70a0d.firebaseapp.com",
-    databaseURL: "https://fir-70a0d.firebaseio.com",
+    authDomain: "delei-225220.firebaseapp.com",
+    databaseURL: "https://delei-225220.firebaseio.com",
     projectId: "delei-225220",
     storageBucket: "",
-    messagingSenderId: "955749658359"
+    messagingSenderId: "739405227401"
   };
   firebase.initializeApp(config);
 
